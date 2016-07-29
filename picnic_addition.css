@@ -1,0 +1,73 @@
+/* Alert */
+
+.alert {
+    background: #e3f7fc;
+	border: solid 1px #8ed9f6;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+.alert.success {
+    background: #e9ffd9;
+	border: solid 1px #a6ca8a;
+}
+.alert.error {
+    background: #ffecec;
+    border: solid 1px #f5aca6;
+}
+.alert.warning {
+    background: #fff8c4;
+    border: solid 1px #f2c779;
+}
+
+/* Utils */
+.right { text-align: right; }
+.center { text-align: center; }
+
+/* Tabs https://css-tricks.com/functional-css-tabs-revisited/ */
+.tabs {
+    position: relative;
+    min-height: 200px;
+    /* This part sucks */
+    clear: both;
+    margin: 5px 0;
+}
+
+.tab {
+    display: inline-block;
+    height: 44px;
+}
+
+.tab label {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    display: block;
+}
+
+.tab [type=radio] {
+    display: none;
+}
+
+.tab [type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
+.tab [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    top: -2px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

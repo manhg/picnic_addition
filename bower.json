@@ -1,0 +1,17 @@
+{
+  "name": "picnic_addition",
+  "description": "An addon for PicnicCSS",
+  "main": [
+    "picnic_addition.css"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "dependencies": {
+    "picnic": "^6.0"
+  },
+  "ignore": [
+    "**/.*",
+    "test"
+  ]
+}
